@@ -1,22 +1,15 @@
 //
-//  콜라츠 추측.swift
+//  문자열 내 마음대로 정렬하기.swift
 //  coding test
 //
-//  Created by 김부성 on 2021/04/29.
+//  Created by 김부성 on 2021/04/27.
 //
 
 import Foundation
 
-print(solution(6))
+print(solution(["sun", "bed", "car"], 1))
 
-func solution(_ num:Int) -> Int {
-    let cnt : Int = 0
-    return divison(num, cnt)
-}
-func divison(_ num:Int, _ count: Int) -> Int {
-    print(count, num)
-    if count == 500 {return -1}
-    else if num == 1 {return count}
-    else if num % 2 == 0 {return divison(num / 2, count+1)}
-    else {return divison(num * 3 + 1, count+1)}
+func solution(_ strings:[String], _ n:Int) -> [String] {
+//    print(strings.sorted{Array($0)[n] == })
+    return []
 }

@@ -7,9 +7,8 @@
 
 import Foundation
 
-print(solution(["sun", "bed", "car"], 1))
+print(solution(["abce", "abcd", "cdx"], 2))
 
 func solution(_ strings:[String], _ n:Int) -> [String] {
-//    print(strings.sorted{Array($0)[n] == })
-    return []
+    return strings.sorted{Array($0)[n] == Array($1)[n] ? $0 < $1 : Array($0)[n] < Array($1)[n]}
 }
